@@ -26,9 +26,23 @@ const Aside = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/tasks">
+                <NavLink to="/users">
                     {({ isActive, isPending, isTransitioning }) => (
-                        <span className={isActive ? "active" : ""}>Blogs</span>
+                        <span className={isActive ? "active" : ""}>Users</span>
+                    )}
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/users2">
+                    {({ isActive, isPending, isTransitioning }) => (
+                        <span className={isActive ? "active" : ""}>Users2</span>
+                    )}
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/posts">
+                    {({ isActive, isPending, isTransitioning }) => (
+                        <span className={isActive ? "active" : ""}>Posts</span>
                     )}
                 </NavLink>
             </li>
