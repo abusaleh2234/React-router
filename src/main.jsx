@@ -55,7 +55,11 @@ const router = createBrowserRouter([
       Component: PostDetails
     }
   ]
-  }
+  },
+    {
+      path: "*",
+      element: <h2>Page not found</h2>
+    }
 ]);
 
 createRoot(document.getElementById('root')).render(
